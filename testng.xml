@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Project Name Suite">
+	<test name="Module name Tests">
+		<classes>
+			<class name="com.projectname.apimodulename.testscripts.SampleTestClass1"></class>
+			<class name="com.projectname.apimodulename.testscripts.SampleTestClass2"></class>			
+		</classes>
+	</test>
+</suite>
