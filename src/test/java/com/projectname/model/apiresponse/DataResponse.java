@@ -1,9 +1,9 @@
 package com.projectname.model.apiresponse;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.projectname.model.apirequest.Batch;
-import com.projectname.model.apirequest.Mids;
-import com.projectname.model.apirequest.Settings;
+import com.projectname.model.apiresponse.Batch;
+import com.projectname.model.apiresponse.Mids;
+import com.projectname.model.apiresponse.Settings;
 
 import java.util.List;
 

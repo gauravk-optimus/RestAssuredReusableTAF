@@ -16,4 +16,8 @@ public class AssertionConstants {
 	public static final String INCORRECT_SAMPLE_FIELD1_MESSAGE = "Incorrect value found for Sample field 1 in response";
 	public static final String INCORRECT_SAMPLE_FIELD2_MESSAGE = "Incorrect value found for Sample field 2 in response";
 	public static final String INCORRECT_SAMPLE_FIELD3_MESSAGE = "Incorrect value found for Sample field 3 in response";
+	public static final String INCORRECT_CONTENT_TYPE_MESSAGE = "Incorrect Content type found";
+	public static final String INCORRECT_STATUS_CODE_MESSAGE = "Status Code is not OK in reponse";
+	public static final String INCORRECT_STATUS_LINE_MESSAGE = "Incorrect Status line found";
+	
 }

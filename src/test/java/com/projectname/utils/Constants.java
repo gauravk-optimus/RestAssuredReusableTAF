@@ -31,4 +31,11 @@ public class Constants {
 	public static final String CONFIG_FILE_PATH = "/src/test/resources/config.properties";		
 	public static final String PATH_LOGGER = Paths.get(PATH_ROOT, "log4j.properties").toString();
 	
+	// API response Constants
+	public static final String CONTENT_TYPE_APP_JSON = "application/json; charset=utf-8";
+	public static final int STATUS_CODE_201 = 201;
+	public static final String STATUS = "OK";
+	public static final String STATUS_LINE = "HTTP/1.1 201 Created";
+		
+	
 }

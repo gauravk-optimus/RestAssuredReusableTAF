@@ -1,7 +1,7 @@
 package com.projectname.model.apirequest;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.projectname.model.apirequest.Batch;
+//import com.projectname.model.apirequest.Batch;
 import com.projectname.model.apirequest.Mids;
 import com.projectname.model.apirequest.Settings;
 
@@ -10,8 +10,8 @@ import java.util.List;
 public class DataRequest {
 	@JsonProperty("settings")
 	private Settings settings;
-	@JsonProperty("batch")
-	private Batch batch;
+	//@JsonProperty("batch")
+	//private Batch batch;
 	@JsonProperty("mids")
 	private List<Mids> mids;
 
@@ -23,13 +23,13 @@ public class DataRequest {
 		this.settings = settings;
 	}
 
-	public Batch getBatch() {
-		return this.batch;
-	}
-
-	public void setBatch(Batch batch) {
-		this.batch = batch;
-	}
+//	public Batch getBatch() {
+//		return this.batch;
+//	}
+//
+//	public void setBatch(Batch batch) {
+//		this.batch = batch;
+//	}
 
 	public List<Mids> getMids() {
 		return this.mids;

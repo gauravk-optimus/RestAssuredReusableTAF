@@ -90,11 +90,12 @@ public class SampleTestClass1 extends BaseTest {
 		// Getting request data from json file
 		log.info("Setting Request Data");
 		String requestData = UtilityService.getTestDataFile(UtilityService.getPropertyFromFile("testDataFolder") + UtilityService.getPropertyFromFile("sampleTestAPI")+"Request_01.json");
-				
+
 		// Fetching Response
 		log.info("Fetching Response");
 		Response response = ApiCommunicatorService.getApiInstance().sendPostRequest(apiEndPointUrl, requestData);
 
+		
 		// Response fields
 		log.info("Fetching Response fields values from Java WS");
 		//TODO Instead of 'sampleField1', use names which signifies the actual fields
@@ -109,5 +110,31 @@ public class SampleTestClass1 extends BaseTest {
 		softAssert.assertEquals(sampleField3, Constants.GENERAL_PLACEHOLDERS.get("Field3"), AssertionConstants.INCORRECT_SAMPLE_FIELD3_MESSAGE);		
 		softAssert.assertAll();
 	}
+	
+	/**
+	 * Test Case to verify api status values
+	 * 
+	 * @throws IOException
+	 * @throws JSONException
+	 */
+	@Test(description = "To verify the api status values of the response", groups = { "Smoke", "Regression" })
+	public void VerifyAPIStatus() throws IOException, JSONException {
+		
+		// Getting request data from json file
+		log.info("Setting Request Data");
+		String requestData = UtilityService.getTestDataFile(UtilityService.getPropertyFromFile("testDataFolder") + UtilityService.getPropertyFromFile("sampleTestAPI")+"Request_01.json");
+
+		// Fetching Response
+		log.info("Fetching Response");
+		Response response = ApiCommunicatorService.getApiInstance().sendPostRequest(apiEndPointUrl, requestData);
+
+		// Assertions
+		log.info("Applying assertions to verify the api statuc values of response");
+		softAssert.assertEquals(response.getContentType(), Constants.CONTENT_TYPE_APP_JSON, AssertionConstants.INCORRECT_CONTENT_TYPE_MESSAGE);		
+		softAssert.assertEquals(response.getStatusCode(), Constants.STATUS_CODE_201, AssertionConstants.INCORRECT_STATUS_CODE_MESSAGE);		
+		softAssert.assertEquals(response.getStatusLine(), Constants.STATUS_LINE, AssertionConstants.INCORRECT_STATUS_LINE_MESSAGE);
+		softAssert.assertAll();
+	}
+
 }
 

@@ -60,9 +60,6 @@ public class Orders {
 	@JsonProperty("transaction_start_date")
 	private String startDate;	
 	
-	@JsonProperty("form_fields")
-	private FormFields formFields;	
-	
 	@JsonProperty("card_name")
 	private String cardName;
 	
@@ -83,14 +80,6 @@ public class Orders {
 
 	public void setCardName(String cardName) {
 		this.cardName = cardName;
-	}
-
-	public FormFields getFormFields() {
-		return this.formFields;
-	}
-	
-	public void setFormFields(FormFields formFields) {
-		this.formFields = formFields;
 	}
 
 	public String getTxntypeId() {
