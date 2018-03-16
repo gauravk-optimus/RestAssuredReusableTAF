@@ -35,4 +35,4 @@ One can start the test automation of his APIs in few minutes. Just follow these 
 * Run the test cases using Maven or TestNG as per the need of your project. Preferably Maven. 
 * See the test execution results at ‘allure-results’ folder in the base directory. That's all!
 
-Note: If you are new to create POJO classes, then for a quick start you can go to ‘http://pojo.sodhanalibrary.com/' URL to create them online. But best way is to create them manually.
+Note: If you are new to POJO classes, then for a quick start you can go to ‘http://pojo.sodhanalibrary.com/' URL to create them online. But best way is to create them manually.
